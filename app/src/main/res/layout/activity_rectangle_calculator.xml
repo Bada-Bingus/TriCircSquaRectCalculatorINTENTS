@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RectangleCalculator">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cont_v_squareRectangle"
+        android:layout_width="403dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="50dp"
+        tools:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_v_rect_returnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:text="Home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_v_formulaPerimeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="190dp"
+            android:gravity="center_horizontal"
+            android:text="Perimeter of Rectangle = Length + Length + Width + Width"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_v_formulaArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Area of Rectangle = Length*Width"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_v_formulaPerimeter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/et_v_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_v_length" />
+
+        <TextView
+            android:id="@+id/tv_v_results"
+            android:layout_width="225dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="181dp"
+            android:gravity="center_horizontal"
+            android:text="Area = 0 \nPerimeter = 0"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_v_formulaArea"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_v_width"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="Width"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_v_length" />
+
+        <TextView
+            android:id="@+id/tv_v_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Length"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_v_width"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="0"
+            app:layout_constraintStart_toStartOf="@+id/et_v_length"
+            app:layout_constraintTop_toBottomOf="@+id/tv_v_width" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

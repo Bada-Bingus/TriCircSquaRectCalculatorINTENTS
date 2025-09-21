@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CircleCalculator">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cont_v_circle"
+        android:layout_width="411dp"
+        android:layout_height="525dp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="42dp"
+        tools:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_v_circ_returnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:text="Home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_v_computedAreaPerimeterCircle"
+            android:layout_width="208dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="290dp"
+            android:gravity="center"
+            android:text="Area = 0 \nPerimeter = 0"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_v_radius" />
+
+        <TextView
+            android:id="@+id/tv_v_formulaAreaCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="4dp"
+            android:text="Area of Circle = Pi * Radius^2"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_v_formulaCircumference"
+            app:layout_constraintStart_toStartOf="@+id/tv_v_formulaCircumference" />
+
+        <TextView
+            android:id="@+id/tv_v_formulaCircumference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Perimeter of Circle = 2 * Pi * Radius"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.57" />
+
+        <EditText
+            android:id="@+id/et_v_radius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_v_radius" />
+
+        <TextView
+            android:id="@+id/tv_v_radius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="74dp"
+            android:text="Radius"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_v_computedAreaPerimeterCircle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
