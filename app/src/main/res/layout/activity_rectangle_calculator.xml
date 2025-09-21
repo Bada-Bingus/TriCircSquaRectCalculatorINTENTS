@@ -62,8 +62,8 @@
 
         <TextView
             android:id="@+id/tv_v_results"
-            android:layout_width="225dp"
-            android:layout_height="78dp"
+            android:layout_width="243dp"
+            android:layout_height="135dp"
             android:layout_marginTop="181dp"
             android:gravity="center_horizontal"
             android:text="Area = 0 \nPerimeter = 0"
